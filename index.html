@@ -8,7 +8,7 @@
 
 <div id="wrapper">
     <div id="menu">
-        <p class="welcome">Welcome, <b></b></p>
+        <p class="welcome">Welcome, <b><?php echo $_SESSION['name']; ?></b></p>
         <p class="logout"><a id="exit" href="#">Exit Chat</a></p>
         <div style="clear:both"></div>
     </div>
@@ -24,9 +24,16 @@
 <script type="text/javascript">
     // jQuery Document
     $(document).ready(function() {
-
+        //If user wants to end session
+        $("#exit").click(function() {
+            var exit = confirm("Are you sure you want to end the session?");
+            if (exit == true) {
+                window.location = 'index.php?logout=true';
+            }
+        });
     });
 </script>
+
 </body>
 
 </html>
