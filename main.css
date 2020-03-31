@@ -29,3 +29,6 @@
     font-weight: 700;
     transform: perspective(1px) translateZ(0);
   }
+  button:hover {
+    background: #2B57EB;
+  }
