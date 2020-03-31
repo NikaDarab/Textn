@@ -74,3 +74,17 @@
     padding-bottom: 0.375rem;
     padding-left: 0;
   }
+  @media (max-width: 760px) {
+    .login-image-column {
+      display: none;
+    }
+    .login-form-column {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .login form {
+      width: 100%;
+    }
+  }
