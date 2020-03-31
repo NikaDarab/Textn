@@ -58,3 +58,7 @@
   .login .form-wrapper {
     position: relative;
   }
+  label {
+    color: #c9d4d8;
+    font-weight: bold;
+  }
