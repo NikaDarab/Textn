@@ -97,7 +97,7 @@
     flex: 1;
     height: 50px;
     line-height: 50px;
-    background: #fff;
+    background: rgb(218, 97, 40);
     color: black;
     font-size: 14px;
     padding: 0 50px;
@@ -107,8 +107,8 @@
   .chat {
     flex: 1;
     padding-top: 40px;
-    background-color: #204CD2;
-    background-image: url(../assets/chat-background.svg);
+    background-color: rgb(45, 80, 185);
+    background-image: url(./chat-background.jpeg);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -118,7 +118,7 @@
   .empty-chat-holder {
     width: 250px;;
     height: 250px;
-    margin-top: 70px;
+    margin-top: 4px;
     margin-left: 35%;;
   }
   
@@ -133,7 +133,7 @@
   }
   
   .empty-chat h2 {
-    color: #1546dc;
+    color: #1f40a3;
     font-family: 'Abril Fatface';
     padding: 0;
     font-size: 2rem;
@@ -157,7 +157,7 @@
     height: 588px;
     font-family: sans-serif;
     letter-spacing: 0.5px;
-    background: #f8f9fb;
+    background: #e5e7eb;
     padding: 0 !important;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
     border-radius: 7px;
@@ -170,7 +170,7 @@
     height: 70px;
     border-bottom: none;
     display: inline-block;
-    background-color: #fff;
+    background-color: rgb(240, 120, 8);
     border-radius: 7px 7px 0 0;
     padding: 0 20px;
     display: flex;
@@ -218,6 +218,7 @@
     height: 516px;
     overflow-y: auto;
     padding-bottom: 50px;
+    background-color: rgb(243, 172, 20);
   }
   
   .received-chats {
