@@ -32,3 +32,9 @@
   button:hover {
     background: #2B57EB;
   }
+  .login-page {
+    background: url(../assets/login-background.svg) no-repeat center center fixed;
+    background-size: cover;
+    padding-top: 100px;
+    height: 100vh;
+  }
