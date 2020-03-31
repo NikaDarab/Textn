@@ -88,3 +88,8 @@
       width: 100%;
     }
   }
+  .form-wrapper i {
+    position: absolute;
+    bottom: 9px;
+    right: 0;
+  }
