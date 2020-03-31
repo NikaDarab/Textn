@@ -38,3 +38,13 @@
     padding-top: 100px;
     height: 100vh;
   }
+  .login {
+    background: #fff;
+    margin: auto;
+    display: flex;
+    max-width: 760px;
+    width: calc(100% - 20px);
+    height: 440px;
+    border-radius: 6px;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3);
+  }
