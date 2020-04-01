@@ -41,18 +41,18 @@
                             <div class="msg-page" id="msg-page">
                                 <div class="loading-message-container" id="loading-message-container">
                                     <div class="spinner">
-                                            <svg width="100" height="100" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" stroke="#003">
-                                                <g fill="none" fill-rule="evenodd">
+                                            <!-- <svg width="100" height="100" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" stroke="#003"> -->
+                                                <g fill="none" >
                                                   <g transform="translate(1 1)" stroke-width="2">
                                                     <circle stroke-opacity=".5" cx="18" cy="18" r="18"/>
-                                                    <path d="M36 18c0-9.94-8.06-18-18-18">
-                                                      <animateTransform
+                                                    <!-- <path d="M36 18c0-9.94-8.06-18-18-18"> -->
+                                                      <!-- <animateTransform
                                                       attributeName="transform"
                                                       type="rotate"
                                                       from="0 18 18"
                                                       to="360 18 18"
                                                       dur="1s"
-                                                      repeatCount="indefinite"/>
+                                                      repeatCount="indefinite"/> -->
                                                     </path>
                                                   </g>
                                                 </g>
@@ -80,8 +80,8 @@
                                 <div class="input-group">
                                     <input type="text" id="input-text" class="form-control message-input" placeholder="Type something" required/>
                                     <div id="send-message-spinner" class="spinner">
-                                            <svg width="30" height="30" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" stroke="#003">
-                                                <g fill="none" fill-rule="evenodd">
+                                            <!-- <svg width="30" height="30" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" stroke="#003"> -->
+                                                <g fill="none" fill-rule="nonzero">
                                                   <g transform="translate(1 1)" stroke-width="2">
                                                     <circle stroke-opacity=".5" cx="18" cy="18" r="18"/>
                                                     <path d="M36 18c0-9.94-8.06-18-18-18">
@@ -106,11 +106,12 @@
             </div>
         </div>
     </div>
+    
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> 
 
 <!-- Chat scripts -->
-<script src="chatService.js"></script>
-<script src="script.js"></script>
+ <script src=".chatService.js"></script>
+<script src=".script.js"></script>
 
 </body>
 </html>
