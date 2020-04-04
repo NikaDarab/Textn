@@ -9,13 +9,13 @@ let talk = () => {
     let msg = document.getElementById("input-text");
     let list = document.getElementById("messages-list");
     let question = document.createElement("li");
-    let questionText = document.createTextNode(msg.value +" "+ date);
+    let questionText = document.createTextNode(msg.value +"  "+ date);
     question.classList.add("question");
     question.appendChild(questionText);
     list.appendChild(question);
     if (know[msg.value]) {
         let answer = document.createElement("li");
-        let answerText = document.createTextNode(know[msg.value] + " " + date);
+        let answerText = document.createTextNode(know[msg.value]+"  "+date);
         answer.classList.add("response");
         answer.appendChild(answerText);
         list.appendChild(answer);
