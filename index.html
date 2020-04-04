@@ -1,91 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> TEXTN </title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
-    <link rel="stylesheet" type="text/css" href="./main.css">
-    
+    <title>TEXTN</title>
+    <link rel="stylesheet" href="./main.css">
 </head>
-
 <body>
-    <div class="chat-app-wrapper">
-        <nav>
-            <div class="nav-left-section">
-                <img src="./logo.gif" class="logo">
-                <span id="title">TEXTN</span>
-            </div>
-            <div class="nav-right-section">
-                <span class="welcome-messsage" id="loggedInUsername">Nika</span>
-                <!-- <img id="loggedInUserAvatar" src="https://data.cometchat.com/assets/images/avatars/captainamerica.png" class="avatar"> -->
-            </div>
-        </nav>
-        <div class="chat">
-            <div class="container">
-                <div class="msg-header">
-                    <div class="active">
-                        <h5>
-                            #Random
-                        </h5>
-                    </div>
-                </div>
-                <div class="chat-page">
-                    <div class="msg-inbox">
-                        <div class="chats" id="chats">
-                            <div class="msg-page" id="msg-page">
-                                <div class="loading-message-container" id="loading-message-container">
-                                    <div class="spinner">
-                                    </div>  
-                                </div>
-                                <div id="empty-chat" class="text-center img-fluid empty-chat">
-                                    <div class="empty-chat-holder">
-                                        <!-- <img src="./text.gif" class="img-res" alt="empty chat image"> -->
-                                    </div>
-                                </div>
-                                <div>
-                                    <div id="group-message-holder">
-                                        </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="msg-bottom">
-                            <form class="message-form" id="message-form">
-                                <div class="input-group">
-                                 <input type="text" id="input-text" class="form-control message-input" placeholder="Type something" onkeydown="if (event.keyCode == 13) {talk()}" required />
-                                    </div> 
-                                    <input id="loggedInUID" type="hidden"/>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>    
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> 
-<!-- <script src="./script.js"></script> -->
-<script>
-    know = {
-        "hello" : "hi",
-        "how are you?" : "good",
-        "ok" : ":)"
-    };
-    function talk() {
-        var user = document.getElementById("input-text").value;
-        document.getElementById("input-text").value = "";
-        document.getElementById("empty-chat").innerHTML += user+"<br>";
-        if (user in know) {
-            document.getElementById("empty-chat").innerHTML += know[user]+"<br>";
-        } else {
-            document.getElementById("empty-chat").innerHTML += "I don't understand...<br>";
-        }
-    } 
-</script>
-
+    <div class="container">
+        <div class="header">
+             <img src="./assets/logo.gif" alt="Textn Logo" class="logo"> 
+             <h1>TXTN</h1>
+        </div>
+        <div class="messages">
+            <ul id="messages-list"></ul>
+        </div>
+        <br/>
+        <div class="inputField">
+            <input type="text" id="input-text" placeholder="Type something" onkeydown="if (event.keyCode == 13) {talk()}" required />
+        </div>
+    </div>
+    <script src="./scripts.js"></script>
 </body>
 </html>
