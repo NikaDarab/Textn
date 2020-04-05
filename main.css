@@ -45,7 +45,7 @@ ul, li {
   overflow-y: scroll;
   overflow-wrap: break-word;
   letter-spacing: .5px;
-  background: #ebe5e7;
+  background: #d8b3bf;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   box-sizing: border-box;
@@ -72,6 +72,7 @@ ul, li {
 	background: #1087d6;
   border-radius: .4em;
   white-space: normal;
+  overflow-x: auto;
   width: auto;
   height: auto;
   text-align: left;
@@ -84,6 +85,7 @@ ul, li {
 	background:greenyellow;
   border-radius: .4em;
   white-space: normal;
+  overflow-x: auto;
   width:auto;
   height: auto;
   text-align: right;
