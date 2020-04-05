@@ -21,7 +21,7 @@ let talk = () => {
         list.appendChild(answer);
     } else {
         let idk = document.createElement("li");
-        let idkText = document.createTextNode('I don\'t know' + date);
+        let idkText = document.createTextNode('I don\'t know'+"  "+ date);
         idk.classList.add("response");
         idk.appendChild(idkText);
         list.appendChild(idk);
