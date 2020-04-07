@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TXTN</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+             <img src="./assets/logo.gif" alt="Textn Logo" class="logo"> 
+             <h1>TXTN</h1>
+        </div>
+        <div class="messages">
+            <ul id="messages-list"></ul>
+        </div>
+        <br/>
+    <form>
+        <div class="inputField">
+            <input type="text" id="input-text" placeholder="Type something"  onkeydown="if (event.keyCode == 13) {talk()}" required  />
+            <input type="submit" value="SEND" />
+        </div>
+    </form>
+    </div>
+    <script src="./scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+
+body {
+  color: #333;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+  background-color: rgb(16, 5, 32);
+  
+
+}
+
+nav {
+  flex: 1;
+  height: 50px;
+  line-height: 50px;
+  background: rgb(218, 97, 40);
+  color: black;
+  font-size: 14px;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.messages{
+  margin: 0 auto;
+  padding: 0;
+  height: 550px;
+  width: 60%;
+  overflow-y: scroll;
+  overflow-wrap: break-word;
+  letter-spacing: .5px;
+  background: #d8b3bf;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: 1px solid #BFCDD8;
+}
+
+
+.header {
+  margin : 0;
+  padding: 0;
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.logo {
+  width: 100%;
+  max-width: 50px;
+}
+  
+.question {
+  color: black;;
+  position: relative;
+	background: #1087d6;
+  border-radius: .4em;
+  white-space: normal;
+  overflow-x: auto;
+  width: auto;
+  height: auto;
+  text-align: left;
+  padding: 5px;
+}
+  
+.response {
+  color: black;;
+  position: relative;
+	background:greenyellow;
+  border-radius: .4em;
+  white-space: normal;
+  overflow-x: auto;
+  width:auto;
+  height: auto;
+  text-align: right;
+  padding: 5px;
+}
+h1 {
+  color: rgb(165, 186, 211);
+}
+h5 {
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.inputField{
+  margin: 0 auto;
+  width: 60%;
+  border-radius: 4px;
+}
+
+#input-text{
+  height: 5px;
+  width: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;  
+}
