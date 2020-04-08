@@ -13,9 +13,13 @@ let talk = () => {
     let list = $('#messages-list')[0];
     let question = document.createElement("li");
     $(question).addClass("question");
+    if((msg.value)==""){
+        alert("Type something");
+    } else {
     let questionText = document.createTextNode(msg.value + "  " + date);
     $(question).append(questionText);
      list.appendChild(question);
+    
     if (know[msg.value]) {
         let answer = document.createElement("li");
         let answerText = document.createTextNode(know[msg.value] + "  " + date);
@@ -30,4 +34,5 @@ let talk = () => {
         $(list).append(idk);
     }
     (msg.value) = "";
-}; 
+    };
+}
