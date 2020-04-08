@@ -6,7 +6,15 @@
     <title>TXTN</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./main.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+    <script>
+		function noenter(e) {
+            e = e || window.event;
+		    var key = e.keyCode || e.charCode;
+		    //alert('e.type: ' + e.type + '; key: ' + key);
+		    return key !== 13; 
+		}
+    </script>
 </head>
 <body>
     <div class="container">
@@ -20,7 +28,7 @@
         <br/>
     <form>
         <div class="inputField">
-            <input type="text" id="input-text" placeholder="Type something"  onkeydown="if (event.keyCode == 13) {talk()}" required  />
+        <input type="text"  id="input-text" placeholder="Type something" onkeydown="if (event.keyCode === 13){talk()}"required />
             <input type="submit" value="SEND" />
         </div>
     </form>

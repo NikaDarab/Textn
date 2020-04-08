@@ -22,7 +22,7 @@ let talk = () => {
         $(answer).addClass("response");
         $(answer).append(answerText);
         $(list).append(answer);
-    } else {
+    } else{
         let idk = document.createElement("li");
         let idkText = document.createTextNode('I don\'t know' + "  " + date);
         $(idk).addClass("response");
@@ -30,4 +30,4 @@ let talk = () => {
         $(list).append(idk);
     }
     msg.value = "";
-};
+}
