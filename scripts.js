@@ -29,5 +29,5 @@ let talk = () => {
         $(idk).append("I don't know"+ "  " + date);
         $(list).append(idk);
     }
-    $(msg.value) = "";
+    (msg.value) = "";
 }; 
